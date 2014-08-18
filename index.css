@@ -1,0 +1,124 @@
+@import "necolas/normalize.css";
+@import "suitcss/base:lib/base.css";
+@import "suitcss/utils-size:lib/size.css";
+@import "suitcss/utils-text:lib/text.css";
+@import "suitcss/components-grid:lib/grid.css";
+@import "suitcss/components-button:lib/button.css";
+
+:root {
+	--base-background: #fff;
+	--base-color: #6e6e6e;
+	--base-font: 400 16px/1.5 'Source Sans Pro', sans-serif;
+	--base-link-color: #4eb980;
+	--base-link-color-hover: var(--base-link-color);
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+    border-bottom-color: transparent;
+}
+
+strong {
+    font-weight: 600;
+    color: #5b5b5b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+.Container {
+    width: auto;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.Container--small {
+    max-width: 46.25rem;
+}
+
+.Header {
+	position: relative;
+	text-align: center;
+	background-color: #6f5499;
+	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
+	background-image: linear-gradient(to bottom, #563d7c 0, #6f5499 100%);
+	background-repeat: repeat-x;
+}
+
+.Header-container {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -10rem;
+}
+
+.Header-logo {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+.Header-title {
+	font-size: 2.625rem;
+	color: #fff;
+}
+
+.Header-body {
+	margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.Button {
+	padding: 0.75em 1.75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 5px;
+	transition: all 0.25s ease-in-out;
+}
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+	border: 0;
+}
+
+.Button--white {
+	color: #6f5499;
+	background-color: #fff;
+}
+
+.Button--white:hover,
+.Button--white:focus,
+.Button--white:active {
+	color: #6f5499;
+	background-color: #e0e0e0;
+	background-color: rgba(255, 255, 255, 0.75);
+}

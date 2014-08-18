@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+'use strict';
+
+var exec = require('co-exec');
+var koa = require('koa');
+var log = require('koa-logger');
+var serve = require('koa-static');
+
+/**
+ * Initialize server
+ */
+
+var port = 8000;
+var server = koa()
+	.use(log())
+	.use(function *(next) {
+		yield exec('make build');
+		yield next;
+	})
+	.use(serve('build'));
+
+/**
+ * Listen
+ */
+
+server.listen(port, function () {
+	console.log();
+	console.log('  Success! The server is running at:');
+	console.log();
+	console.log('    http://localhost:' + port);
+	console.log();
+});
