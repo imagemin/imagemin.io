@@ -1,9 +1,9 @@
-@import "necolas/normalize.css";
-@import "suitcss/base:lib/base.css";
-@import "suitcss/utils-size:lib/size.css";
-@import "suitcss/utils-text:lib/text.css";
-@import "suitcss/components-grid:lib/grid.css";
-@import "suitcss/components-button:lib/button.css";
+@import 'necolas/normalize.css';
+@import 'suitcss/base:lib/base.css';
+@import 'suitcss/utils-size:lib/size.css';
+@import 'suitcss/utils-text:lib/text.css';
+@import 'suitcss/components-grid:lib/grid.css';
+@import 'suitcss/components-button:lib/button.css';
 
 :root {
 	--base-background: #fff;
