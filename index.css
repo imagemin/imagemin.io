@@ -4,6 +4,7 @@
 @import 'suitcss/utils-text:lib/text.css';
 @import 'suitcss/components-grid:lib/grid.css';
 @import 'suitcss/components-button:lib/button.css';
+@import 'imagemin/logo';
 
 :root {
 	--base-background: #fff;
@@ -79,7 +80,7 @@ h6 {
 	margin-top: -10rem;
 }
 
-.Header-logo {
+.Header-logo[data-logo="imagemin"] {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
