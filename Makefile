@@ -1,5 +1,4 @@
 duo = ./node_modules/.bin/duo
-imagemin = ./node_modules/.bin/imagemin
 myth = ./node_modules/.bin/myth
 
 #
@@ -33,9 +32,6 @@ build/index.js: node_modules index.js
 
 build/index.css: node_modules index.css
 	@$(duo) index.css | $(myth) > build/index.css
-
-images: node_modules images
-	@$(imagemin) *.{gif.jpg,png,svg}
 
 node_modules: package.json
 	@npm install

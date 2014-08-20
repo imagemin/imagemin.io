@@ -6,7 +6,6 @@
   "devDependencies": {
     "co-exec": "^1.1.0",
     "duo": "^0.7.3",
-    "imagemin": "^1.0.1",
     "koa": "^0.8.2",
     "koa-logger": "^1.2.2",
     "koa-static": "^1.4.6",
