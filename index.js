@@ -1,5 +1,8 @@
 'use strict';
 
+var animate = require('ianstormtaylor/animate');
+var goTo = require('component/scroll-to');
+var events = require('component/event');
 var viewport = require('pazguille/viewport');
 
 /**
@@ -23,3 +26,19 @@ function whole(el) {
  */
 
 whole(document.querySelector('.Header'));
+
+/**
+ * Animate logo
+ */
+
+animate(document.querySelector('.Header-logo'), 'fade-down-in');
+
+/**
+ * Scroll to content
+ */
+
+events.bind(document.querySelector('.Header-scrollTo'), 'click', function () {
+	goTo(0, viewport.height + 1, {
+		duration: 500
+	});
+});
